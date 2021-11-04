@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+	 <link rel='stylesheet' href='mediweb.css'>
+		<meta charset="utf-8">
+		<title>Medi-Web Add Patient</title>
+		<script src="script"></script>
+	</head>
+<body>
+	<header>
+	<div class="dropdown">
+		<h1>Medi-Web</h1>
+		<button class="dropbtn">Menu</button>
+		<nav class="dropdown-content">
+		  <a href='Home.html'>Home</a>
+		  <a href='Login.html'>Log Out</a>
+		  <a href='View_Patients.html'>Patient</a>
+		  <a href='Patients_Risk.html'>Patients at Risk</a>
+		  <a href='Add_Patient.html'>Add Patient</a>
+		</nav>
+	</div>
+	</header>
+	<div id="main">
+	<form>
+		<label>First Name:</label> <input type="text" name="First Name" autocomplete="on"><br><br>
+		<label>Last Name:</label> <input type="text" name="First Name" autocomplete="on"><br><br>
+		<label>Diagnois:</label> <input type="text" name="First Name" autocomplete="on"><br><br>
+		<label>BOD:</lable> <input type="date" name="DOB" autocomplete="on"><br><br>
+		Gender:<br><br>
+		</label>
+			<input name="gender" type="radio" value="Male" >Male
+			<input name="gender" type="radio" value="Female">Female
+			<input name="gender" type="radio" value="Other">Other
+		<p>Risk Rate: <i>(On a scale of 1 - 5)</i>
+		No Threat<input type="range" min="1" max="5" name="threat" onchange="slide()">High Threat<br><span id="threat"> </span>
+		</p>
+		<label>Appoitment Info:</label><br><br>
+		<textarea id="info" name="AppoitmentInfo" ROWS="10" COLS="60" placeholder="Detailed overview of patient visit."></textarea>
+		<br><br>
+		<button id="submit">Submit</button>
+		
+	</div>
+	</form>
+
+	<footer>
+	  <small>
+	  &copy; All rights reserved.
+	  </small>	
+	<hr>
+	<a href="#top">RETURN TO TOP</a>
+	<hr>
+	</footer>
+</body>
+</html>

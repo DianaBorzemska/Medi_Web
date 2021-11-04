@@ -1,0 +1,138 @@
+html {
+	background-image: url('Images/background.png'); 
+	/*This background image was found on the following website: 
+	https://www.toptal.com/designers/subtlepatterns/?s=intersection*/
+}	
+
+body{
+	margin: auto;
+	color: black;
+	width: 85%;
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+}
+
+#register_details, #login_details, #register_others, #login_others{
+	background-color: white;
+	border: solid 0.05em black;
+	margin: auto;
+	padding: 15px;
+	width: 50%;
+}
+#main{
+	background-color: white;
+	border: solid 0.05em black;
+	margin: auto;
+	padding: 15px;
+	width: 85%;
+}
+
+#login_register{
+	font-size: 3em;
+	text-align: center;
+	color: #696969;
+}
+#login{
+	text-align: centre;
+}
+
+#submit, #register{
+background-color: white;
+  border: 2px solid #808080;
+  color:  #696969;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left:25%;
+  margin-right:25%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 50%;
+}
+
+.login_other, .register_other{
+  background-color: white;
+  border: 2px solid #808080;
+  color:  #696969;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left:20%;
+  margin-right:20%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 50%;
+}
+
+.login__details, #pass, .register__details, .inputbox{
+	margin: 4px 2px;
+	margin-left: 5%;
+}
+
+#email{
+	margin: 4px 2px;
+	margin-left: 9%;
+}
+
+#submit:hover, #register:hover, .login_other:hover, .register_other:hover{
+	background-color: #808080;
+	color:  white;
+}
+
+.dropbtn {
+	background-color: #b0e0e6;
+	color: white;
+	padding: 20px;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+	background-color: #00b7eb;
+  }
+
+footer {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+footer small{
+	color: #a9a9a9;
+}
