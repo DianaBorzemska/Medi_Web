@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head> 
-	 <link rel='stylesheet' href='mediweb.css'>
+	
+	 
 		<meta charset="utf-8">
 		<title>Medi-Web Register</title>
+		<link rel="stylesheet" href="page.css">
+		
 	</head>
 <body>
 	<header>
-	<h1 id="login_register">Medi-Web</h1>
+	<h1>Medi-Web</h1>
 	</header>
-		<form method="get"  action="https://test-ec065-default-rtdb.europe-west1.firebasedatabase.app/"  target="_blank">
-		<div id="register_details">
-			<p class="register__details">
-			<label>First Name:</label> <input class="inputbox" type="text" name="First Name" autocomplete="on" required>
-			</p>
-			<p class="register__details">
-			<label>Last Name:</label> <input class="inputbox" type="text" name="Last Name" autocomplete="on" required>
-			</p><br>
-			<p class="register__details">
-				<label>E-Mail:</label> <input id="email" type="text" name="E-mail" autocomplete="on" required>
-			</p><br>
-			<p class="register__details">
-				<label>Password:</label> <input id="pass" type="password" name="Password" autocomplete="on" required>
-
-				<label>Repeat password:</label> <input type="password" name="Password" autocomplete="on" required>
-			</p>
-			<br>
-			<button id="register" type="register">Register</button><br><br>
-			<a class="register_other" href='Login.html'>Sign In</a>
-		</div>
-		<div id="register_others">
-			<a href='https://www.facebook.com/' class="register_other">Register with Facebook</button></a><br><br>
-			<a href='https://twitter.com/i/flow/signup' class="register_other">Register with Twitter</button></a><br><br>
-			<a href='https://www.instagram.com/accounts/emailsignup/' class="register_other">Register with Instagram</button></a><br><br>
-		</div>
+		
+		<div>
+			
+			<label for="fname">First Name</label> 
+			<input type="text" id="fname" name="firstname" autocomplete="on" required>
+			
+			<label for="lname:">Last Name</label> 
+			<input  type="text" id="lname" name="lastname" autocomplete="on" required>
+			
+			<label for="EMail">Email</label> 
+			<input id="email" type="text" id="email" name="email" autocomplete="on" required>
+			
+			<label for="Password">Password</label> 
+			<input id="pass" type="pssword" id="pssword" name="pssword" autocomplete="on" required>
+			
+			<label for="Repeat Password">Repeat Password</label> 
+			<input id="pass_repeat" type="password" id="password" name="repeatpassword" autocomplete="on" required>
+			
+			<button type="submit" id="submit">Submit</button>
+			<a href='Login.html'>Sign In</a>
+			<a href='https://www.facebook.com/'><button type="register">Register with Facebook</button></a>
+			<a href='https://twitter.com/i/flow/signup'><button type="register">Register with Twitter</button></a>
+			<a href='https://www.instagram.com/accounts/emailsignup/'><button type="register">Register with Instagram</button></a>
 		</form>
-		<br><br>
+		</div>
+	<footer>
+	  <small>
+	  &copy; All rights reserved.
+	  </small>	
+	<hr>
+	<a href="#top">RETURN TO TOP</a>
+	<hr>
+	</footer>
+	
+	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+	<script src="app.js"></script>
+	
+	
 </body>
 </html>
