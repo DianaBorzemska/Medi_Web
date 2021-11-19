@@ -12,6 +12,14 @@ body{
 	font-size: 1em;
 }
 
+table, th, td {
+	border: 1px solid black;
+  }
+
+table.center {
+	margin-left: auto; 
+	margin-right: auto;
+}
 #register_details, #login_details, #register_others, #login_others{
 	background-color: white;
 	border: solid 0.05em black;
@@ -19,7 +27,7 @@ body{
 	padding: 15px;
 	width: 50%;
 }
-#main{
+.main{
 	background-color: white;
 	border: solid 0.05em black;
 	margin: auto;
@@ -27,11 +35,13 @@ body{
 	width: 85%;
 }
 
-#login_register{
+h1{
 	font-size: 3em;
 	text-align: center;
 	color: #696969;
+	margin-top: 0%;
 }
+
 #login{
 	text-align: centre;
 }
@@ -88,42 +98,46 @@ background-color: white;
 .dropbtn {
 	background-color: #b0e0e6;
 	color: white;
-	padding: 20px;
+	padding: 23px;
 	font-size: 20px;
 	border: none;
 	cursor: pointer;
-  }
+}
   
-  .dropdown {
+.dropdown {
 	position: relative;
 	display: inline-block;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
-  }
+}
   
-  .dropdown-content a {
+.dropdown-content a {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
-  }
+}
   
-  .dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #f1f1f1}
   
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
 	display: block;
-  }
+}
   
-  .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
 	background-color: #00b7eb;
-  }
+}
+
+.dropdown button{
+	margin-right: 22em;
+}
 
 footer {
   list-style-type: none;
@@ -135,4 +149,16 @@ footer {
 
 footer small{
 	color: #a9a9a9;
+}
+
+.tootop{
+	text-align: center;
+}
+
+#num_box{
+	width: 30px;
+}
+
+#form1, #form2, #form3{
+	display: none;
 }
