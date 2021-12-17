@@ -2,9 +2,10 @@
 <html lang="en">
 	<head> 
 	 <link rel='stylesheet' href='mediweb.css'>
+	 	
 		<meta charset="utf-8">
 		<title>Medi-Web Add Patient</title>
-		<script src="design.js"></script>
+		
 	</head>
 <body>
 	<header>
@@ -23,13 +24,13 @@
 	<div class="main">
 		<form class="main_">
 		<h2>1. Personal Details</h2>
-		<label>First Name:</label> <input type="text" id="fname" name="First Name" autocomplete="on"><br><br>
-		<label>Last Name:</label> <input type="text" id="lname" name="First Name" autocomplete="on"><br><br>
+		<label for="fname">FirstName</label> <input type="text" id="fname" name="FirstName" autocomplete="on"><br><br>
+		<label for="lname">LastName</label> <input type="text" id="lname" name="Last Name" autocomplete="on"><br><br>
 		<label>DOB:</label> <input type="date" name="DOB" id="DOB" autocomplete="on"><br><br>
-		Gender:<br><br>
+	
 		</label>
-			<input name="gender" type="radio" id="sex" value="Male" >Male
-			<input name="gender" type="radio" id="sex" value="Female">Female
+			<input name="gender" type="radio" class="sex" value="Male">Male
+			<input name="gender" type="radio" class="sex" value="Female">Female
 		</p>
 		<label for="typeIllness">What does this patient suffer with?</label>
 			<select name="illness" id="illness" onchange="changeFunc();">
@@ -45,68 +46,68 @@
 		<div id="form1">
 			<form id="alzheimersPaitent">
 				<hr><h3>Alzheimers Form</h3><hr>
-				<label>MRI Delay Time:</label> 
-				<input type="text" name="mri" class="num_box" id="Mri" autocomplete="on"><br><br>
-				<label>Years of Education :</label> 
-				<input type="text" name="education" class="num_box" id="Education" autocomplete="on"><br><br>
-				<label>Socioeconomic Status (1 to 5):</label> 
-				<input type="text" name="socioeconomic" class="num_box" id="socioeconomic" autocomplete="on"><br><br>
-				<label>Mini Mental State Examination (1 to 30):</label> 
-				<input type="text" name="mentalState" class="num_box" id="mini_mental" autocomplete="on"><br><br>
-				<label>Clinical Dementia Rating (0 to 2):</label> 
-				<input type="text" name="dementiaRating" class="num_box" id="clinical" autocomplete="on"><br><br>
-				<label>Estimated total Intracranial Volume:</label> 
-				<input type="text" name="intracranial" class="num_box" id="intracranial" autocomplete="on"><br><br>
-				<label>Normalize Whole Brain volume(0.5 to 1):</label> 
-				<input type="text" name="brainVolume" class="num_box" id="brain" autocomplete="on"><br><br>
-				<label>Atlas Scaling Factor(0 to 2):</label> 
-				<input type="text" name="scaliingFactor" class="num_box" id="atlas" autocomplete="on"><br><br>
+				<label for="Mri">MRI Delay Time</label> 
+				<input type="text" name="mri" id="Mri" autocomplete="on"><br><br>
+				<label for="Education">Years of Education </label> 
+				<input type="text" name="education" id="Education" autocomplete="on"><br><br>
+				<label for="socioeconomic">Socioeconomic Status (1 to 5):</label> 
+				<input type="text" name="socioeconomic" id="socioeconomic" autocomplete="on"><br><br>
+				<label for="mini mental">>Mini Mental State Examination (1 to 30)</label> 
+				<input type="text" name="mentalState" id="mini_mental" autocomplete="on"><br><br>
+				<label for="clinical">Clinical Dementia Rating (0 to 2):</label> 
+				<input type="text" name="dementiaRating" id="clinical" autocomplete="on"><br><br>
+				<label for="intracranial">Estimated tota lIntracranial Volume</label> 
+				<input type="text" name="intracranial" id="intracranial" autocomplete="on"><br><br>
+				<label for="brain">Normalize Whole Brain volume(0.5 to 1):</label> 
+				<input type="text" name="brainVolume" id="brain" autocomplete="on"><br><br>
+				<label for="atlas">Atlas Scaling Factor(0 to 2):</label> 
+				<input type="text" name="scaliingFactor" id="atlas" autocomplete="on"><br><br>
 			</form>
 		</div>
 		<div id="form2">
 			<form id="diabetsPaitent">
 				<hr><h3>Diabetic Form</h3><hr>
-				<label>Pregnancies:</label> 
-				<input type="text" name="pregnancies" class="num_box" id="preg" autocomplete="on"><br><br>
-				<label>Blood Pressure:</label> 
-				<input type="text" name="bloodPressure" class="num_box" id="blood" autocomplete="on"><br><br>
-				<label>Glucose:</label> 
-				<input type="text" name="glucose" class="num_box" id="glucose" autocomplete="on"><br><br>
-				<label>Skin Thickness:</label> 
-				<input type="text" name="skin" class="num_box" id="skin" autocomplete="on"><br><br>
-				<label>Insulin:</label> 
-				<input type="text" name="insulin" class="num_box" id="insulin" autocomplete="on"><br><br>
-				<label>BMI:</label> 
-				<input type="text" name="bmi" class="num_box" id="bmi" autocomplete="on"><br><br>
-				<label>Diabetes Pedigree Function:</label> 
-				<input type="text" name="pedigree" class="num_box" id="pedigree" autocomplete="on"><br><br>
+				<label>Pregnancies</label> 
+				<input type="text" name="pregnancies" id="preg" autocomplete="on"><br><br>
+				<label>Blood Pressure</label> 
+				<input type="text" name="bloodPressure" id="blood" autocomplete="on"><br><br>
+				<label>Glucose</label> 
+				<input type="text" name="glucose" id="glucose" autocomplete="on"><br><br>
+				<label>Skin Thickness</label> 
+				<input type="text" name="skin" id="skin" autocomplete="on"><br><br>
+				<label>Insulin</label> 
+				<input type="text" name="insulin" id="insulin" autocomplete="on"><br><br>
+				<label>BMI</label> 
+				<input type="text" name="bmi" id="bmi" autocomplete="on"><br><br>
+				<label>Diabetes Pedigree Function</label> 
+				<input type="text" name="pedigree" id="pedigree" autocomplete="on"><br><br>
 			</form>
 	   </div>
 	   <div id="form3">
 			<form id="heartPaitent">
 				<hr><h3>Heart Disease Form</h3><hr>
 				<label>Chest Pain Type (1 to 4):</label> 
-				<input type="text" name="painType" class="num_box" id="chest" autocomplete="on"><br><br>
-				<label>Resting blood pressure:</label> 
-				<input type="text" name="restingBloodPressure" class="num_box" id="resting" autocomplete="on"><br><br>
-				<label>Serum Cholesterol:</label> 
-				<input type="text" name="cholesterol" class="num_box" id="cholesterol" autocomplete="on"><br><br>
+				<input type="text" name="painType" id="chest" autocomplete="on"><br><br>
+				<label>Resting Blood Pressure:</label> 
+				<input type="text" name="restingBloodPressure" id="resting" autocomplete="on"><br><br>
+				<label>SerumCholesterol:</label> 
+				<input type="text" name="cholesterol" id="cholesterol" autocomplete="on"><br><br>
 				<label>Fasting Blood Sugar (0 < 120mg/dl, 1 >120mg/dl):</label> 
-				<input type="text" name="fastingBloodSugar" class="num_box" id="bloodsugar" autocomplete="on"><br><br>
-				<label>Resting ECG (0 = normal, 1 = having ST-T wave abnormality,2 = left ventricular hyperthrophy):</label> 
-				<input type="text" name="restingECG" class="num_box" id="restingECG" autocomplete="on"><br><br>
+				<input type="text" name="fastingBloodSugar" id="bloodsugar" autocomplete="on"><br><br>
+				<label>RestingECG(0=normal,1= having ST-T wave abnormality,2 = left ventricular hyperthrophy):</label> 
+				<input type="text" name="restingECG" id="restingECG" autocomplete="on"><br><br>
 				<label>Max Heart Rate:</label> 
-				<input type="text" name="maxHeartRate" class="num_box" id="heartrate" autocomplete="on"><br><br>
-				<label>Exercise induced angina (1 yes 0 no):</label> 
-				<input type="text" name="inducedAngina" class="num_box" id="inducedAngina" autocomplete="on"><br><br>				
+				<input type="text" name="maxHeartRate" id="heartrate" autocomplete="on"><br><br>
+				<label>Exercise induced angina(1 yes 0 no):</label> 
+				<input type="text" name="inducedAngina" id="inducedAngina" autocomplete="on"><br><br>				
 				<label>ST depression induced by exercise relative to rest (int or float):</label> 
-				<input type="text" name="stDepression" class="num_box" id="depression" autocomplete="on"><br><br>
-				<label>Peak exercise ST segment (1 = upsloping, 2 = flat, 3 = downsloping):</label> 
-				<input type="text" name="peakExercise" class="num_box" id="exercise" autocomplete="on"><br><br>
-				<label>Number of major vessels (range 0 to 3):</label> 
-				<input type="text" name="majorVessels" class="num_box" id="vessels" autocomplete="on"><br><br>
+				<input type="text" name="stDepression" id="depression" autocomplete="on"><br><br>
+				<label>Peak exercise ST segment(1 = upsloping, 2 = flat, 3 = downsloping):</label> 
+				<input type="text" name="peakExercise" id="exercise" autocomplete="on"><br><br>
+				<label>Number of major vessels(range 0 to 3):</label> 
+				<input type="text" name="majorVessels" id="vessels" autocomplete="on"><br><br>
 				<label>Talassemia (3 = normal, 6 = fixed defect, 7 = reversible defect):</label> 
-				<input type="text" name="thalassemia" class="num_box" id="thalassemia" autocomplete="on"><br><br>
+				<input type="text" name="thalassemia" id="thalassemia" autocomplete="on"><br><br>
 			</form>
 		</div>
 		<button id="submit">SUBMIT</button>
@@ -126,5 +127,10 @@
 	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 	<script src="design.js"></script>
+	
+	
+
+	
+
 </body>
 </html>
